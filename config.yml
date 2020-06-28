@@ -1,0 +1,16 @@
+title: CursoRPABásico_platzi
+description: 'RPA :( nosé que estoy haciendo.'
+template:
+  repo: cursorpabasico_platzi-template
+  name: cursorpabasico_platzi
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
